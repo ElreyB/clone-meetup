@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Text = props => {
+const Text = ({ text, pStyle, divStyle, ...props }) => {
   return (
-    <div>
-      <p>Hello World</p>
+    <div className={divStyle}>
+      <p style={pStyle}>{text}</p>
     </div>
   );
 };
